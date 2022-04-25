@@ -15,7 +15,7 @@ class User < ApplicationRecord
 
   # 一覧画面で使う
   has_many :followings, through: :relationships, source: :followed
-  has_many :followers, through: :reverse_of_relationshios, source: :follower
+  has_many :followers, through: :reverse_of_relationships, source: :follower
 
   # フォローした時の処理
   def follow(user_id)
