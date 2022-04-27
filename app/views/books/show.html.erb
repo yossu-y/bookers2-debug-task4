@@ -54,8 +54,8 @@
             <% end %>
           </tr>
         <% end %>
-
       </table>
+
       <div>
         <%= form_with model: [@book, @book_comment] do |f| %>
           <%= f.text_area :comment, rows:"5",cols:"50", placeholder: "" %></br>
